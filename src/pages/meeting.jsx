@@ -51,7 +51,7 @@ const MeetingPage = () => {
   const routerCtx = useRouter()
   const stateCtx = useGlobalState()
   const mutationCtx = useGlobalMutation()
-  
+
   const localClient = useMemo(() => {
     const client = new RTCClient()
     if (!client._created) {
@@ -267,7 +267,7 @@ const MeetingPage = () => {
                       )}
                     />
                   </Tooltip>
-                  
+
                   {/* <i onClick={handleClick('profile')} className={clsx(classes.customBtn, 'show-profile')}/> */}
                 </div>
               )}
